@@ -3,7 +3,7 @@ node_js:
 - "4"  # nodejs的版本
 branches:
   only:
-  - dev  # 设置自动化部署的分支
+  - master  # 设置自动化部署的分支
 before_install:
 - export TZ='Asia/Shanghai'  # 设置时区
 - npm install -g hexo
@@ -11,7 +11,7 @@ before_install:
 # 将xxxxxxxxxxx替换上面生成的内容
 # 这里面的文件路径可根据自己的情况进行修改
 # 解密id_rsa_blog.enc 输出到.ssh/文件夹下，命名为id_rsa
-- openssl aes-256-cbc -K $encrypted_xxxxxxxxxxx_key -iv $encrypted_xxxxxxxxxxx_iv -in .travis/id_rsa_blog.enc -out ~/.ssh/id_rsa -d
+- openssl aes-256-cbc -K $encrypted_7322c78ad85f_key -iv $encrypted_7322c78ad85f_iv -in id_rsa_blog.enc -out .travis/id_rsa_blog -d
 # 设置id_rsa文件权限
 - chmod 600 ~/.ssh/id_rsa
 # 添加ssh密钥
