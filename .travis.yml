@@ -6,6 +6,8 @@ branches:
   - src  # 设置自动化部署的分支
 before_install:
 - export TZ='Asia/Shanghai'  # 设置时区
+- npm cache clean
+- npm install npm -g
 - npm install hexo -g
 - npm install hexo-cli -g
 # 将xxxxxxxxxxx替换上面生成的内容
