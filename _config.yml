@@ -86,5 +86,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:shuyal520/shuyal520.github.io.git
+  repo: git@git.coding.net:shuyal520/shuyal520.github.io.git
   branch: master
